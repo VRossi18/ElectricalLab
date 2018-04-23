@@ -9,7 +9,7 @@ namespace ElectricalLab
     public class ElectricalLabCalc
     {
         /// <summary>
-        /// Calcula alguma coisa
+        /// Calculated all basic circuits variables
         /// </summary>
         /// <param name="Resistence">Resistência</param>
         /// <param name="Current">Corrente</param>
@@ -35,7 +35,7 @@ namespace ElectricalLab
                 }
                 else
                 {
-                    throw new ArgumentException("Nenhum dos parâmetros é igual a zero");
+                    throw new ArgumentException("None of the variables is equal to 0 (input the value 0 in the variable to be calculated)");
                 }
 
             }
@@ -60,7 +60,7 @@ namespace ElectricalLab
             return Result;
         }
 
-        // Complex numbers conversion (polar to rectangle)
+        // Complex numbers conversion (rectangle to polar)
         public string CalcToPolar(double Real, double Imaginary)
         {
             string Result;
